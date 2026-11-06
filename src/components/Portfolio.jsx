@@ -3,7 +3,7 @@ import { siteConfig } from '../config/siteConfig'
 
 const Portfolio = () => {
   return (
-    <section id="trabajos" className="py-16 md:py-24 bg-gray-50">
+    <section id="trabajos" className="py-16 md:py-24 bg-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
