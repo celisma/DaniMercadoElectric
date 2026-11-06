@@ -31,37 +31,43 @@ export const siteConfig = {
       id: 1,
       title: "Instalaciones Eléctricas",
       description: "Instalaciones completas para viviendas, locales comerciales e industriales. Cumplimiento de normativas vigentes.",
-      icon: "zap"
+      icon: "zap",
+      image: "/images/instalaciones-electricas.jpg"
     },
     {
       id: 2,
       title: "Reparaciones y Mantenimiento",
       description: "Solución rápida de averías, cortocircuitos, fallas eléctricas y mantenimiento preventivo.",
-      icon: "wrench"
+      icon: "wrench",
+      image: "/images/reparaciones-mantenimiento.jpg"
     },
     {
       id: 3,
       title: "Tableros Eléctricos",
       description: "Montaje, actualización y reparación de cuadros eléctricos, disyuntores y protecciones.",
-      icon: "grid"
+      icon: "grid",
+      image: "/images/tableros-electricos.jpg"
     },
     {
       id: 4,
       title: "Iluminación",
       description: "Diseño e instalación de sistemas de iluminación interior, exterior y eficiente.",
-      icon: "lightbulb"
+      icon: "lightbulb",
+      image: "/images/iluminacion.jpg"
     },
     {
       id: 5,
       title: "Puntos de Luz y Tomas",
       description: "Ampliación de circuitos, instalación de tomas, interruptores y puntos adicionales.",
-      icon: "plug"
+      icon: "plug",
+      image: "/images/puntos-luz-tomas.jpg"
     },
     {
       id: 6,
       title: "Certificaciones y Verificaciones",
       description: "Inspecciones, mediciones y asesoramiento para cumplir con requerimientos eléctricos.",
-      icon: "check"
+      icon: "check",
+      image: "/images/certificaciones-verificaciones.jpg"
     }
   ],
   
@@ -72,33 +78,34 @@ export const siteConfig = {
   portfolio: [
     {
       id: 1,
-      title: "[TRABAJO PLACEHOLDER 1]",
+      title: "Estación de Carga para Auto Eléctrico",
       category: "Instalaciones",
-      description: "Descripción pendiente - Reemplazar con información real del trabajo.",
-      image: null, // null = mostrar placeholder
-      isPlaceholder: true
+      description: "Instalación de estación de carga para vehículo eléctrico.",
+      image: "/portfolio/estacionCarga.jpeg",
+      isPlaceholder: false
     },
     {
       id: 2,
-      title: "[TRABAJO PLACEHOLDER 2]",
+      title: "Instalación de Tablero Maestro",
       category: "Reparaciones",
       description: "Descripción pendiente - Reemplazar con información real del trabajo.",
-      image: null,
+      image: "/portfolio/tableroMaestro.jpeg",
       isPlaceholder: true
     },
     {
       id: 3,
-      title: "[TRABAJO PLACEHOLDER 3]",
-      category: "Tableros",
+      title: "Instalación de Bomba de Agua",
+      category: "Instalaciones",
       description: "Descripción pendiente - Reemplazar con información real del trabajo.",
-      image: null,
-      isPlaceholder: true
+      image: "/portfolio/bombaAgua.jpeg",
+      isPlaceholder: false
     }
   ],
   
   // Sobre mí/empresa
   about: {
     title: "Sobre Daniel Mercado TEC",
+    image: "/images/silhueta-vectorial-electricista_1136639-6322.avif",
     description: [
       "Electricista profesional con compromiso con la seguridad, calidad y puntualidad en cada trabajo.",
       "Servicio personalizado para viviendas, comercios y pequeñas industrias en San Miguel de Tucumán, Tafí Viejo y alrededores.",

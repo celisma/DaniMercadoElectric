@@ -72,6 +72,11 @@ src/
 
 La configuración ya está aplicada con los datos de Daniel Mercado TEC. Puedes ajustar lo siguiente en `src/config/siteConfig.js`:
 
+### Imágenes
+
+- **Servicios**: Agregar imágenes en `public/images/` con los nombres: `instalaciones-electricas.jpg`, `reparaciones-mantenimiento.jpg`, `tableros-electricos.jpg`, `iluminacion.jpg`, `puntos-luz-tomas.jpg`, `certificaciones-verificaciones.jpg`
+- **Portfolio/Trabajos**: Agregar imágenes en `public/portfolio/` y actualizar las rutas en `src/config/siteConfig.js` (ver instrucciones abajo)
+
 ### Datos del Negocio (ya configurados)
 ```javascript
 businessName: "Daniel Mercado TEC",
@@ -149,7 +154,8 @@ export default defineConfig({
 
 - **WhatsApp:** Solo funciona si configuras `whatsapp` con número en formato internacional sin `+` ni espacios
 - **Formulario:** Sin backend configurado, el formulario muestra un mensaje informativo. Necesita conectar con Formspree, Netlify Forms, EmailJS u otro servicio
-- **Portfolio:** Las imágenes son placeholders. Reemplázalas con fotos reales en `src/assets/portfolio/`
+- **Portfolio:** Las imágenes son placeholders. Reemplázalas con fotos reales en `public/portfolio/`
+- **Servicios:** Las imágenes de servicios se cargan desde `public/images/`. Si no hay imagen, se muestra un ícono placeholder
 - **Datos sensibles:** Nunca agregues credenciales o información privada al repositorio
 - **Sin testimonios:** La sección de testimonios fue omitida intencionalmente ya que no se proporcionaron reseñas reales
 

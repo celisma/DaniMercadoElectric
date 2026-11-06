@@ -29,18 +29,37 @@ const Services = () => {
             return (
               <article
                 key={service.id}
-                className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-xl hover:border-primary-300 transition-all duration-300 focus-within:ring-2 focus-within:ring-primary-500 focus-within:ring-offset-2"
+                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-primary-300 transition-all duration-300 focus-within:ring-2 focus-within:ring-primary-500 focus-within:ring-offset-2"
                 tabIndex="0"
               >
-                <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="text-primary-700" size={28} aria-hidden="true" />
+                {service.image ? (
+                  <div className="h-48 w-full overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-48 w-full bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+                    <div className="text-center">
+                      <FiZap className="mx-auto text-primary-700 mb-2" size={40} aria-hidden="true" />
+                      <p className="text-xs text-primary-800 font-medium">Imagen pendiente</p>
+                    </div>
+                  </div>
+                )}
+                <div className="p-6 md:p-8">
+                  <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="text-primary-700" size={28} aria-hidden="true" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
               </article>
             )
           })}

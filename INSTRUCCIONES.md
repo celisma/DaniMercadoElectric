@@ -13,14 +13,15 @@ Proyecto creado desde cero con React + Vite + Tailwind CSS para sitio web de ele
 ## Pendientes por Completar
 
 ### Recomendado
-1. **Fotos reales del portfolio** - Agregar fotos en `src/assets/portfolio/` y actualizar `src/config/siteConfig.js`
-2. **Verificar redes sociales** - Confirmar si el usuario de Instagram es correcto o si hay Facebook/LinkedIn
-3. **Servicios** - Personalizar array `services` según servicios reales si es necesario
-4. **Foto profesional** - Agregar foto en sección "Sobre mí"
+1. **Fotos de servicios** - Agregar imágenes en `public/images/` con los nombres indicados en `src/config/siteConfig.js`
+2. **Fotos reales del portfolio** - Agregar fotos en `public/portfolio/` y actualizar `src/config/siteConfig.js`
+3. **Verificar redes sociales** - Confirmar si el usuario de Instagram es correcto o si hay Facebook/LinkedIn
+4. **Personalizar servicios** - Ajustar títulos/descripciones si es necesario
+5. **Foto profesional** - Agregar foto en sección "Sobre mí"
 
 ### Opcional
-5. **Teléfono** - Agregar si es diferente al WhatsApp
-6. **Email** - Agregar dirección de correo
+6. **Teléfono** - Agregar si es diferente al WhatsApp
+7. **Email** - Agregar dirección de correo
 
 ## Comandos
 

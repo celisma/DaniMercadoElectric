@@ -14,12 +14,21 @@ const About = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <div className="w-full h-64 md:h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl flex items-center justify-center mb-6">
-                <div className="text-center">
-                  <FiUser className="mx-auto text-primary-700 mb-4" size={80} aria-hidden="true" />
-                  <p className="text-primary-800 font-semibold">Foto Profesional</p>
-                  <p className="text-sm text-primary-700 mt-1">[Agregar foto]</p>
-                </div>
+              <div className="w-full h-64 md:h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl overflow-hidden mb-6">
+                {siteConfig.about.image ? (
+                  <img 
+                    src={siteConfig.about.image} 
+                    alt="Foto profesional de Daniel Mercado"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center h-full">
+                    <FiUser className="mx-auto text-primary-700 mb-4" size={80} aria-hidden="true" />
+                    <p className="text-primary-800 font-semibold">Foto Profesional</p>
+                    <p className="text-sm text-primary-700 mt-1">[Agregar foto]</p>
+                  </div>
+                )}
               </div>
             </div>
 

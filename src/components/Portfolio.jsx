@@ -10,7 +10,7 @@ const Portfolio = () => {
             Trabajos Realizados
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Galería de trabajos. Las imágenes mostradas son placeholders - reemplaza con fotos reales de tus trabajos.
+            Galería de trabajos realizados 
           </p>
         </div>
 
@@ -23,7 +23,7 @@ const Portfolio = () => {
             >
               <div className="h-48 md:h-56 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative">
                 {project.image ? (
-                  <img 
+                 <img 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover"
@@ -57,12 +57,7 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg text-center">
-          <p className="text-sm text-yellow-800">
-            <strong>Nota:</strong> Para mostrar trabajos reales, agrega las fotos en la carpeta <code className="bg-yellow-100 px-1 rounded">src/assets/portfolio/</code> 
-            y actualiza la configuración en <code className="bg-yellow-100 px-1 rounded">src/config/siteConfig.js</code>
-          </p>
-        </div>
+        
       </div>
     </section>
   )
